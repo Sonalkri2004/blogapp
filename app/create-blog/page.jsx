@@ -78,7 +78,7 @@ console.log(session)
       return;
     }
 
-    if (excerpt.length > 60) {
+    if (excerpt.length > 50) {
       setError("Excerpt must be only 60 characters long.");
       return;
     }
