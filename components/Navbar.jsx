@@ -17,7 +17,7 @@ const Navbar = () => {
   async function fetchUser() {
     try {
       const res = await fetch(
-        `https://blogite-xi.vercel.app/api/user/${session?.user?._id}`
+        `https://blogapp-platform.vercel.app//api/user/${session?.user?._id}`
       );
       const resData = await res.json();
       setUserData(resData);

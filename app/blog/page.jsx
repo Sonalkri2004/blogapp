@@ -3,7 +3,7 @@ import FirstBlog from "@/components/FirstBlog";
 import OtherBlogs from "@/components/OtherBlogs";
 
 async function fetchBlogs() {
-  const res = await fetch("https://blogite-xi.vercel.app/api/blog", {
+  const res = await fetch("https://blogapp-platform.vercel.app//api/blog", {
     cache: "no-store",
   });
 

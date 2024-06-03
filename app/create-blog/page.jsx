@@ -104,7 +104,7 @@ console.log(session)
         authorId: session?.user?._id
       }
 
-      const response = await fetch("https://blogite-xi.vercel.app/api/blog", {
+      const response = await fetch("https://blogapp-platform.vercel.app//api/blog", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${session?.user?.accessToken}`

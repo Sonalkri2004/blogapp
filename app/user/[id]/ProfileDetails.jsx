@@ -75,7 +75,7 @@ const ProfileDetails = ({ profile, params }) => {
       };
 
       const response = await fetch(
-        `https://blogite-xi.vercel.app/api/user/${params.id}`,
+        `https://blogapp-platform.vercel.app//api/user/${params.id}`,
         {
           headers: {
             "Content-Type": "application/json",

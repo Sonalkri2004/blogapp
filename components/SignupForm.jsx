@@ -60,7 +60,7 @@ const SignupForm = () => {
         password,
       };
 
-      const response = await fetch("https://blogite-xi.vercel.app/api/signup", {
+      const response = await fetch("https://blogapp-platform.vercel.app//api/signup", {
         headers: {
           "Content-Type": "application/json",
         },

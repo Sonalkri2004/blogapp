@@ -2,7 +2,7 @@ import React from 'react'
 import ProfileDetails from './ProfileDetails'
 
 async function getUserData(params) {
-    const res = await fetch(`https://blogite-xi.vercel.app/api/user/${params.id}`, {
+    const res = await fetch(`https://blogapp-platform.vercel.app//api/user/${params.id}`, {
       cache: "no-store",
     });
   

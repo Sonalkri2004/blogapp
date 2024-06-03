@@ -65,7 +65,7 @@ const BlogDetails = ({ params }) => {
   async function fetchBlog() {
     try {
       const response = await fetch(
-        `https://blogite-xi.vercel.app/api/blog/${params.id}`
+        `https://blogapp-platform.vercel.app//api/blog/${params.id}`
       );
       const blog = await response.json();
       setBlogDetails(blog);
@@ -94,7 +94,7 @@ const BlogDetails = ({ params }) => {
       if (confirmModal) {
         setIsDeleting(true);
         const response = await fetch(
-          `https://blogite-xi.vercel.app/api/blog/${params.id}`,
+          `https://blogapp-platform.vercel.app//api/blog/${params.id}`,
           {
             method: "DELETE",
             headers: {
@@ -124,7 +124,7 @@ const BlogDetails = ({ params }) => {
 
     try {
       const response = await fetch(
-        `https://blogite-xi.vercel.app/api/blog/${params.id}/like`,
+        `https://blogapp-platform.vercel.app//api/blog/${params.id}/like`,
         {
           method: "PUT",
           headers: {
@@ -163,7 +163,7 @@ const BlogDetails = ({ params }) => {
       };
 
       const response = await fetch(
-        `https://blogite-xi.vercel.app/api/blog/${params.id}/comment`,
+        `https://blogapp-platform.vercel.app//api/blog/${params.id}/comment`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -194,7 +194,7 @@ const BlogDetails = ({ params }) => {
   const handleDeleteComment = async (commentId) => {
     try {
       const response = await fetch(
-        `https://blogite-xi.vercel.app/api/blog/${params.id}/comment/${commentId}`,
+        `https://blogapp-platform.vercel.app//api/blog/${params.id}/comment/${commentId}`,
         {
           headers: {
             "Content-Type": "application/json",
