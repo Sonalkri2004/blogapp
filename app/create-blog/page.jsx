@@ -20,8 +20,8 @@ const initialState = {
 
 const CreateBlog = () => {
 
-  const CLOUD_NAME= "dbz1jvmg8"
-  const UPLOAD_PRESET= "nextjs_blog_images"
+  const CLOUD_NAME= "dnyim8pto"
+  const UPLOAD_PRESET= "blogapp"
 
   const [state, setState] = useState(initialState);
   const [error, setError] = useState("");
